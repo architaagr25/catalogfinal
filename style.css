@@ -1,0 +1,203 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+   
+}
+
+
+body{
+font-family: Georgia, 'Times New Roman', Times, serif;
+font-size: 1.2rem;
+background-color: rgba(255,251,239,255);
+
+}
+
+.container{
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+  background-color: rgba(255,251,239,255);
+    
+}
+
+.name{
+    font-family:fantasy;
+    background-color: rgba(255,251,239,255);
+    font-size: 30px;
+   padding-top: 25px;
+   padding-left: 50px;
+}
+
+.left-text{
+
+    flex-basis: 30%;
+    text-align: center;
+
+}
+
+.button{
+    background-color:rgb(21, 8, 1);
+    font-size: 20px;
+    color:white;
+    border:none;
+    border-radius:15px;
+    cursor:pointer;
+    margin-top: 20px;
+    margin-right:6px;
+    transition:opacity 0.15s;
+    padding-left:16px;
+    padding-right:16px;
+    padding-top:10px;
+    padding-bottom:10px;
+ 
+
+}
+
+.button:hover{
+    background-color: #5a5656;
+   
+}
+
+.a{
+   position: absolute;
+   top: 15px;
+   right: 50px;
+}
+
+
+.heading{
+    font-size: 3rem ;
+    color: black;
+
+}
+
+.subheading{
+    margin-top: 10px;
+    color: rgba(49, 16, 16, 0.61);
+}
+
+.gallery{
+   
+    flex-basis: 50%;
+    display: grid;
+    gap: 8px;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-auto-rows: 120px;
+}
+
+.box{
+    background-position: top;
+    background-size: cover;
+    color: white;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: #222;
+   background-blend-mode: hard-light;
+ 
+}
+
+.boxa{
+    background-position: top;
+    background-size: cover;
+    color: white;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: #222;
+   background-blend-mode: hard-light;
+}
+.boxf{
+    background-position: center;
+    background-size: cover;
+    color: white;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: #222;
+   background-blend-mode: hard-light;
+   
+}
+
+.boxf:hover{
+    background-color: #999;
+    transition: all 1s ease-in-out;
+    
+    box-shadow: 0 0 10px #888;
+    cursor: pointer;
+    background-position: bottom;
+}
+
+.boxa:hover{
+    background-color: #999;
+    transition: all 1s ease-in-out;
+    box-shadow: 0 0 10px #888;
+    cursor: pointer;
+    background-position: bottom;
+}
+
+
+.box:hover{
+    background-color: #999;
+    transition: all 1s ease-in-out;
+    background-position: center;
+    box-shadow: 0 0 10px #888;
+    cursor: pointer;
+}
+
+#box-1{
+    grid-row: 1/3;
+}
+
+.col-2{
+    grid-column: span 2;
+}
+
+.row-2{
+    grid-row: span 2;
+}
+
+
+/*@media (min-width: 400px) and (max-width: 700px) {
+    .container{
+        background:linear-gradient( to right, green, red);
+    }
+    
+}*/
+
+/*@media (max-width: 400px) {
+    .container{
+        background: linear-gradient(to right, red, green);
+    }
+    
+}*/
+
+/*@media( 400px <= width <= 700px){
+    .container{
+        background: linear-gradient(to right, rgb(126, 75, 7), white) ;
+    }
+}*/
+
+/*media query for width <= 1024px*/
+/*
+@media screen and (max-width: 1024px) {
+    .container {
+        flex-direction: column;
+        padding-block: 20px;
+        grid-auto-rows: 220px;
+    }
+   .gallery {
+   
+    width: 100%;
+   }
+   .box {
+    margin-inline: 10px;
+    grid-row: span 1;
+    grid-column: span 3;
+   }
+    
+}
+
